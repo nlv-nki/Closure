@@ -5,8 +5,7 @@ const array = () => {
   function wrapper(value) {
     let typeValue = typeof value;
     if (typeValue !== 'number') {
-     let error = new Error('Only numbers are allowed')
-      return error;
+      return new Error('Only numbers are allowed');
     }
     return result[value];
   }
@@ -21,10 +20,7 @@ const array = () => {
 
 module.exports = { array };
 
-
-
 const arr = array();
-
 arr.push('first');
 arr.push('second');
 arr.push('third');
